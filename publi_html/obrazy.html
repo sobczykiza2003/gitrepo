@@ -4,8 +4,10 @@
 <head>
 <meta charset="utf-8" />
 <title>wstawianie obrazu na stronę WWW</title>
+<link rel="stylesheet" href="./CSS/style.css">
 <style>
     img { border: 5px solid red;}
+    a.zielony {color:red;}
     .lewy { float: left; margin-right: 20px;}
     .prawy {
         float: right;
@@ -36,9 +38,11 @@
         font-family: serif;
         }
     
-    #link {
-        color:yellow;
-        }
+    #link {color:yellow;}
+    #link1 {color: pink;}
+        #listy li{color:red;}
+        li.wew {color:yellow;}
+        
     
 </style>
 
@@ -68,9 +72,21 @@
 
 <div>
     <p class="zielony">akapit 7 tekst przykładowy <a id="link" href="how2html.pl"> kurs HTML 5</a></p>
+    <ol>
     <p>akapit 5 tekst przykładowy</p>
     <p>akapit 6 tekst przykładowy</p>
+    </ol>
 </div>
+<div id="listy">
+   <ul>
+	 <li>
+	  <ul>
+		 <li class="wew">element listy zagnieżdżonej</li>
+	  </ul>
+	 </li>
+  </ul>
+</div>
+
 
 </body>
 
